@@ -14,8 +14,8 @@ sudo mv kubectl /usr/local/bin/
 ```
 
 
-## Kind with Docker
-# Create cluster
+# Kind with Docker
+## Create cluster
 
 `kind create cluster --config cluster-config.yaml --name gnn-cluster`
 
