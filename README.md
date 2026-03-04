@@ -15,30 +15,31 @@ sudo mv kubectl /usr/local/bin/
 
 # Kind with Docker
 ## Create cluster
-kind create cluster --config cluster-config.yaml --name gnn-cluster
+
+`kind create cluster --config cluster-config.yaml --name gnn-cluster`
 
 ## Verify nodes
-kubectl get nodes
+`kubectl get nodes`
 
 ## Check cluster info
-kubectl cluster-info --context kind-gnn-cluster
+`kubectl cluster-info --context kind-gnn-cluster`
 
 ## Verify control plane components
-kubectl get pods -n kube-system
+`kubectl get pods -n kube-system`
 
 
 # Kind with Podman
 ## Set kind to use podman
-export KIND_EXPERIMENTAL_PROVIDER=podman
+`export KIND_EXPERIMENTAL_PROVIDER=podman`
 
 ## Start podman machine (if not running)
-podman machine start
+`podman machine start`
 
 ## Verify podman works
-podman ps
+`podman ps`
 
 ## Create cluster with podman
-KIND_EXPERIMENTAL_PROVIDER=podman kind create cluster --config cluster-config.yaml --name gnn-cluster
+`KIND_EXPERIMENTAL_PROVIDER=podman kind create cluster --config cluster-config.yaml --name gnn-cluster`
 
 ## Set alias for convenience (optional)
 ```
@@ -47,10 +48,10 @@ source ~/.zshrc
 ```
 
 ## Verify nodes
-kubectl get nodes
+`kubectl get nodes`
 
 ## Check control plane
-kubectl get pods -n kube-system
+`kubectl get pods -n kube-system`
 
 # Setup Metrics Access
 
