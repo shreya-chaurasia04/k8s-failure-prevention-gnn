@@ -190,12 +190,6 @@ Forwarding from [::1]:9090 -> 9090
 Handling connection for 9090
 Handling connection for 9090
 Handling connection for 9090
-root@LAPTOP-R4SU0DN5:~/K8-Project# kubectl port-forward deploy/prometheus-deployment 9090:9090 -n monitoring
-Forwarding from 127.0.0.1:9090 -> 9090
-Forwarding from [::1]:9090 -> 9090
-Handling connection for 9090
-Handling connection for 9090
-Handling connection for 9090
 
 ## configured for kube-apiserver for now
 <img width="1918" height="681" alt="image" src="https://github.com/user-attachments/assets/3883c6f2-745d-42bd-9b15-05db49431e91" />
