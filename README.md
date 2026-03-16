@@ -322,3 +322,6 @@ backend-api   2/2     2            2           38s
 frontend      2/2     2            2           38s
 redis-cache   1/1     1            1           38s
 ```
+cAdvisor - container monitoring on kubelet to scrape CPU/RAM for the pods running on each of the nodes
+<img width="1918" height="577" alt="image" src="https://github.com/user-attachments/assets/a67c20de-2175-49f8-ad80-a02c3b5e6473" />
+
