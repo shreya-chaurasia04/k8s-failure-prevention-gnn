@@ -285,3 +285,26 @@ Currently configured and scraping:
 Example Prometheus target view:
 
 <img width="1918" height="681" alt="image" src="https://github.com/user-attachments/assets/3883c6f2-745d-42bd-9b15-05db49431e91" />
+
+## accessing metrics from kube-api, controller, scheduler
+```bash
+# Pull the API Server metrics:
+
+ kubectl --kubeconfig /etc/kubernetes/admin.conf get --raw /metrics > /tmp/apiserver_full_list.txt
+grep "# HELP" /tmp/apiserver_full_list.txt | head -n 20
+
+# Using the APIServer-Kubelet client certs to identify as a high-privilege system component scheduler
+curl -k \ --cert /etc/kubernetes/pki/apiserver-kubelet-client.crt \ --key /etc/kubernetes/pki/apiserver-kubelet-client.key \ https://127.0.0.1:10259/metrics > /tmp/scheduler_full_list.txt 
+
+# same for the Controller  
+
+curl -k \ --cert /etc/kubernetes/pki/apiserver-kubelet-client.crt \ --key /etc/kubernetes/pki/apiserver-kubelet-client.key \ https://127.0.0.1:10257/metrics > /tmp/controller_full_list.txt
+```
+
+## output
+```bash
+root@gnn-research-control-plane:/# cd tmp
+root@gnn-research-control-plane:/tmp# ls
+apiserver_full_list.txt  controller_full_list.txt  scheduler_full_list.txt
+```
+view the above for scraped metrics
