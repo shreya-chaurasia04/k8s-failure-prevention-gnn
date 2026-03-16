@@ -308,3 +308,17 @@ root@gnn-research-control-plane:/tmp# ls
 apiserver_full_list.txt  controller_full_list.txt  scheduler_full_list.txt
 ```
 view the above for scraped metrics
+
+## Configure Data-Plane with workload.yaml - deployment and svc for frontend, backend and redis cache
+```bash
+root@LAPTOP-R4SU0DN5:~/K8-Project# k get svc -n workload
+NAME           TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
+backend-svc    ClusterIP   10.96.125.244   <none>        80/TCP     27s
+frontend-svc   ClusterIP   10.96.40.30     <none>        80/TCP     27s
+redis-svc      ClusterIP   10.96.215.200   <none>        6379/TCP   27s
+root@LAPTOP-R4SU0DN5:~/K8-Project# k get deployments -n workload
+NAME          READY   UP-TO-DATE   AVAILABLE   AGE
+backend-api   2/2     2            2           38s
+frontend      2/2     2            2           38s
+redis-cache   1/1     1            1           38s
+```
