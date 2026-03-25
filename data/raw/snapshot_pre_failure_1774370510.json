@@ -1,0 +1,3807 @@
+{
+  "timestamp": "2026-03-24T22:11:49.958034",
+  "metrics": {
+    "timestamp": "2026-03-24T22:11:49.958077",
+    "pod_cpu": [
+      {
+        "metric": {
+          "pod": "backend-api-669d9964b8-b8qkw"
+        },
+        "value": [
+          1774370509.988,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "pod": "backend-api-669d9964b8-qblwm"
+        },
+        "value": [
+          1774370509.988,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "pod": "workload-generator-667dc97f4f-67vch"
+        },
+        "value": [
+          1774370509.988,
+          "0.0430466760809661"
+        ]
+      },
+      {
+        "metric": {
+          "pod": "frontend-7868f8655b-vqjvm"
+        },
+        "value": [
+          1774370509.988,
+          "0.0001664651135545321"
+        ]
+      },
+      {
+        "metric": {
+          "pod": "frontend-7868f8655b-25dwq"
+        },
+        "value": [
+          1774370509.988,
+          "0.00016067517591358273"
+        ]
+      },
+      {
+        "metric": {
+          "pod": "redis-cache-67d574b944-ll9pf"
+        },
+        "value": [
+          1774370509.988,
+          "0.004332672249160845"
+        ]
+      }
+    ],
+    "pod_memory": [
+      {
+        "metric": {
+          "pod": "backend-api-669d9964b8-b8qkw"
+        },
+        "value": [
+          1774370509.998,
+          "13643776"
+        ]
+      },
+      {
+        "metric": {
+          "pod": "backend-api-669d9964b8-qblwm"
+        },
+        "value": [
+          1774370509.998,
+          "13684736"
+        ]
+      },
+      {
+        "metric": {
+          "pod": "workload-generator-667dc97f4f-67vch"
+        },
+        "value": [
+          1774370509.998,
+          "18968576"
+        ]
+      },
+      {
+        "metric": {
+          "pod": "frontend-7868f8655b-vqjvm"
+        },
+        "value": [
+          1774370509.998,
+          "17031168"
+        ]
+      },
+      {
+        "metric": {
+          "pod": "frontend-7868f8655b-25dwq"
+        },
+        "value": [
+          1774370509.998,
+          "16650240"
+        ]
+      },
+      {
+        "metric": {
+          "pod": "redis-cache-67d574b944-ll9pf"
+        },
+        "value": [
+          1774370509.998,
+          "12382208"
+        ]
+      },
+      {
+        "metric": {
+          "pod": "cpu-stressor-74d6ffcfc4-gghxs"
+        },
+        "value": [
+          1774370509.998,
+          "3129344"
+        ]
+      }
+    ],
+    "node_cpu": [
+      {
+        "metric": {
+          "instance": "10.89.0.10:9100"
+        },
+        "value": [
+          1774370510.001,
+          "0.3344444444444706"
+        ]
+      },
+      {
+        "metric": {
+          "instance": "10.89.0.11:9100"
+        },
+        "value": [
+          1774370510.001,
+          "0.33555555555557753"
+        ]
+      },
+      {
+        "metric": {
+          "instance": "10.89.0.13:9100"
+        },
+        "value": [
+          1774370510.001,
+          "0.32754827670495656"
+        ]
+      }
+    ],
+    "node_memory": [
+      {
+        "metric": {
+          "__name__": "node_memory_Active_bytes",
+          "instance": "10.89.0.10:9100",
+          "job": "node-exporter"
+        },
+        "value": [
+          1774370510.004,
+          "842780672"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_memory_Active_bytes",
+          "instance": "10.89.0.11:9100",
+          "job": "node-exporter"
+        },
+        "value": [
+          1774370510.004,
+          "807522304"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_memory_Active_bytes",
+          "instance": "10.89.0.13:9100",
+          "job": "node-exporter"
+        },
+        "value": [
+          1774370510.004,
+          "849715200"
+        ]
+      }
+    ],
+    "apiserver_latency": [
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "admissionregistration.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "mutatingwebhookconfigurations",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.002328707"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "admissionregistration.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "mutatingwebhookconfigurations",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301151.9938017625"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "admissionregistration.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "validatingadmissionpolicies",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000368708"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "admissionregistration.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "validatingadmissionpolicies",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301748.8432523369"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "admissionregistration.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "validatingadmissionpolicybindings",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.0001305"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "admissionregistration.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "validatingadmissionpolicybindings",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301936.8897353974"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "admissionregistration.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "validatingwebhookconfigurations",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000098792"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "admissionregistration.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "validatingwebhookconfigurations",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301016.8082140863"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apiextensions.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "customresourcedefinitions",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000121125"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apiextensions.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "customresourcedefinitions",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301479.46334853006"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apiregistration.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "apiservices",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000093125"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apiregistration.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "apiservices",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301191.763249694"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apiregistration.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "apiservices",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.5470360929999998"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "controllerrevisions",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "150670.33331247992"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "controllerrevisions",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.009072617"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "daemonsets",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000602916"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "daemonsets",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301251.95224459335"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "daemonsets",
+          "scope": "resource",
+          "subresource": "status",
+          "verb": "PUT",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.066254821"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "daemonsets",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.00098854"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "daemonsets",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.011470532"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "deployments",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000589833"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "deployments",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301694.0694781092"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "deployments",
+          "scope": "namespace",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.010612111"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "deployments",
+          "scope": "resource",
+          "subresource": "status",
+          "verb": "PUT",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.3307196419999999"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "deployments",
+          "scope": "resource",
+          "verb": "DELETE",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.006897871"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "deployments",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "54.367428010999994"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "deployments",
+          "scope": "resource",
+          "verb": "PATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.017496731"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "deployments",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.028872870999999998"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "replicasets",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.0027068730000000003"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "replicasets",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "451946.69935217506"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "replicasets",
+          "scope": "resource",
+          "subresource": "status",
+          "verb": "PUT",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.200503537"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "replicasets",
+          "scope": "resource",
+          "verb": "DELETE",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.006634245"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "replicasets",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.013317821999999998"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "replicasets",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.033131996999999996"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "replicasets",
+          "scope": "resource",
+          "verb": "PUT",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.004013957"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "statefulsets",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.0021134570000000004"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "apps",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "statefulsets",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "452002.2282698076"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "subjectaccessreviews",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "4.363984854000003"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "autoscaling",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "horizontalpodautoscalers",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v2"
+        },
+        "value": [
+          1774370510.006,
+          "150584.275262542"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "batch",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "cronjobs",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.002270372"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "batch",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "cronjobs",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301475.9600557711"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "batch",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "jobs",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000335208"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "batch",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "jobs",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301334.2647147619"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "certificates.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "certificatesigningrequests",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.004685624"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "certificates.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "certificatesigningrequests",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "150822.3144994909"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "certificates.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "certificatesigningrequests",
+          "scope": "resource",
+          "subresource": "approval",
+          "verb": "PUT",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.00518908"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "certificates.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "certificatesigningrequests",
+          "scope": "resource",
+          "subresource": "status",
+          "verb": "PUT",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.006324953"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "certificates.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "certificatesigningrequests",
+          "scope": "resource",
+          "verb": "DELETE",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.00701492"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "certificates.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "certificatesigningrequests",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.105226956"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "coordination.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "leases",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "150472.26650371583"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "coordination.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "leases",
+          "scope": "namespace",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000134"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "coordination.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "leases",
+          "scope": "namespace",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "150853.63605216597"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "coordination.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "leases",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "83.95318624300005"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "coordination.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "leases",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.058031413"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "coordination.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "leases",
+          "scope": "resource",
+          "verb": "PUT",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "1471.0798113889698"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "discovery.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "endpointslices",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.00170075"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "discovery.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "endpointslices",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "1206403.1039996815"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "discovery.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "endpointslices",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "13.563838951999971"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "discovery.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "endpointslices",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.013098357"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "discovery.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "endpointslices",
+          "scope": "resource",
+          "verb": "PUT",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.16015815900000002"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "events.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "events",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.060122245"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "flowcontrol.apiserver.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "flowschemas",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000085791"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "flowcontrol.apiserver.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "flowschemas",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301083.9812015483"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "flowcontrol.apiserver.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "flowschemas",
+          "scope": "resource",
+          "subresource": "status",
+          "verb": "APPLY",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.011364367000000002"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "flowcontrol.apiserver.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "flowschemas",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.008230619"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "flowcontrol.apiserver.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "prioritylevelconfigurations",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000077"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "flowcontrol.apiserver.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "prioritylevelconfigurations",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301538.0502799628"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "flowcontrol.apiserver.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "prioritylevelconfigurations",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.11047807600000001"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "networking.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "ingressclasses",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000497375"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "networking.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "ingressclasses",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301763.88599347096"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "networking.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "ingresses",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "150862.25957151497"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "networking.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "ipaddresses",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000083"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "networking.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "ipaddresses",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301305.8874665888"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "networking.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "ipaddresses",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.007860781"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "networking.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "networkpolicies",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.001331499"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "networking.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "networkpolicies",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "753688.0775414067"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "networking.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "servicecidrs",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.001516291"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "networking.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "servicecidrs",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "1055555.125170777"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "networking.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "servicecidrs",
+          "scope": "resource",
+          "subresource": "status",
+          "verb": "APPLY",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.0019890819999999997"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "networking.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "servicecidrs",
+          "scope": "resource",
+          "verb": "PATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.001224791"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "networking.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "servicecidrs",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.101413709"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "node.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "runtimeclasses",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.003326707"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "node.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "runtimeclasses",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "905013.1497447111"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "policy",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "poddisruptionbudgets",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.001522165"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "policy",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "poddisruptionbudgets",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301586.49097525177"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "clusterrolebindings",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.002106166"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "clusterrolebindings",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301744.8896884081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "clusterrolebindings",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.012522239000000001"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "clusterrolebindings",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.03800105"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "clusterroles",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.003926247"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "clusterroles",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301055.1911900148"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "clusterroles",
+          "scope": "resource",
+          "verb": "APPLY",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.018231525999999998"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "clusterroles",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.026830068"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "clusterroles",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.055731665"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "rolebindings",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000265958"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "rolebindings",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301586.84847798717"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "rolebindings",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.0018461219999999997"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "rolebindings",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.014040657"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "roles",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000090083"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "roles",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301586.95445533626"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "roles",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.0019079149999999998"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "rbac.authorization.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "roles",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.011129699000000002"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "resource.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "deviceclasses",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.001609622"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "resource.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "deviceclasses",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301571.330129431"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "resource.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "resourceclaims",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000623333"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "resource.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "resourceclaims",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301251.34149912983"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "resource.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "resourceclaimtemplates",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "150926.27182083006"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "resource.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "resourceslices",
+          "scope": "cluster",
+          "verb": "DELETE",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.19761013"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "resource.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "resourceslices",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.0009325410000000001"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "resource.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "resourceslices",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "451924.21233686624"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "scheduling.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "priorityclasses",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.001396957"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "scheduling.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "priorityclasses",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301235.8280870037"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "scheduling.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "priorityclasses",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.003388955"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "scheduling.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "priorityclasses",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.0058146199999999995"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "csidrivers",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.004799954"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "csidrivers",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "1055748.4604675816"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "csinodes",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000660541"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "csinodes",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301269.5305831777"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "csinodes",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.01186553"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "csinodes",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.003678914"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "csistoragecapacities",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000447"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "csistoragecapacities",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301127.24268039287"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "storageclasses",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.00228129"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "storageclasses",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "603023.8542814294"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "storageclasses",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000275874"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "storageclasses",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000674207"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "volumeattachments",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000971458"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "volumeattachments",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "452107.1121208699"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "group": "storage.k8s.io",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "volumeattributesclasses",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "150843.24606618495"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "configmaps",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000405333"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "configmaps",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301361.17319882085"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "configmaps",
+          "scope": "namespace",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.010891485999999997"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "configmaps",
+          "scope": "namespace",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "3228643.4808029844"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "configmaps",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "55.479684184"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "configmaps",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.122751897"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "configmaps",
+          "scope": "resource",
+          "verb": "PUT",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.005087872"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "endpoints",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.002881539"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "endpoints",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "452216.500088929"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "endpoints",
+          "scope": "namespace",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.001339666"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "endpoints",
+          "scope": "namespace",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "150677.18558055"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "endpoints",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "23.394697551999915"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "endpoints",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.013241109000000001"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "endpoints",
+          "scope": "resource",
+          "verb": "PUT",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.12416818300000002"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "events",
+          "scope": "namespace",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.003071207"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "events",
+          "scope": "resource",
+          "verb": "PATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "142.21564064399934"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "events",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "35.02747263300002"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "limitranges",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.0010521250000000001"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "limitranges",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "452360.6145146465"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "limitranges",
+          "scope": "namespace",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "1.0910710239999997"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "namespaces",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.005981369"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "namespaces",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "1507613.1365053854"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "namespaces",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.07070576300000002"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "namespaces",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.21730652799999997"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "nodes",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.16297960600000003"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "nodes",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "2563533.0100702234"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "nodes",
+          "scope": "resource",
+          "subresource": "proxy",
+          "verb": "CONNECT",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "1569.2696864200057"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "nodes",
+          "scope": "resource",
+          "subresource": "status",
+          "verb": "PATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "203.61030823200036"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "nodes",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "159.19030758"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "nodes",
+          "scope": "resource",
+          "verb": "PATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.041377632"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "nodes",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.108599202"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "persistentvolumeclaims",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.002597956"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "persistentvolumeclaims",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "753580.5890989566"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "persistentvolumes",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.0040189119999999995"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "persistentvolumes",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "753693.6379654026"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "pods",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.014857361"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "pods",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "1959954.2704112497"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "pods",
+          "scope": "namespace",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.28092962500000024"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "pods",
+          "scope": "namespace",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "150694.98698120707"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "pods",
+          "scope": "resource",
+          "subresource": "binding",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.075453034"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "pods",
+          "scope": "resource",
+          "subresource": "log",
+          "verb": "CONNECT",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "62.356798501"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "pods",
+          "scope": "resource",
+          "subresource": "portforward",
+          "verb": "CONNECT",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "102890.022995392"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "pods",
+          "scope": "resource",
+          "subresource": "status",
+          "verb": "PATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.9715581219999999"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "pods",
+          "scope": "resource",
+          "verb": "DELETE",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "103.84147593399999"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "pods",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "56.57941297200001"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "pods",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "2.32523865"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "podtemplates",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "150682.6170226381"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "replicationcontrollers",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.002453247"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "replicationcontrollers",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "451381.8049771101"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "resourcequotas",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.002194914"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "resourcequotas",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "451973.16033851827"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "secrets",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.00082375"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "secrets",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "452209.70816765697"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "secrets",
+          "scope": "resource",
+          "verb": "DELETE",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.003383625"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "secrets",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000808166"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "secrets",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.001304124"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "serviceaccounts",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.000380667"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "serviceaccounts",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "301750.93125842867"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "serviceaccounts",
+          "scope": "resource",
+          "subresource": "token",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "8.112421816999994"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "serviceaccounts",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.7278113869999998"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "serviceaccounts",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.09553096299999998"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "services",
+          "scope": "cluster",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "6.751601313000004"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "services",
+          "scope": "cluster",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "2262569.101897856"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "services",
+          "scope": "namespace",
+          "verb": "LIST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.001995625"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "services",
+          "scope": "namespace",
+          "verb": "WATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "150560.07339103086"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "services",
+          "scope": "resource",
+          "verb": "GET",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.014990361000000002"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "services",
+          "scope": "resource",
+          "verb": "PATCH",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.006076537"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "resource": "services",
+          "scope": "resource",
+          "verb": "POST",
+          "version": "v1"
+        },
+        "value": [
+          1774370510.006,
+          "0.023481096"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "subresource": "api",
+          "verb": "GET"
+        },
+        "value": [
+          1774370510.006,
+          "19.340994020000057"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "component": "apiserver",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "subresource": "apis",
+          "verb": "GET"
+        },
+        "value": [
+          1774370510.006,
+          "9.604427828000015"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "subresource": "/healthz",
+          "verb": "GET"
+        },
+        "value": [
+          1774370510.006,
+          "0.00034295800000000003"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "subresource": "/livez",
+          "verb": "GET"
+        },
+        "value": [
+          1774370510.006,
+          "25.244091399000034"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "subresource": "/readyz",
+          "verb": "GET"
+        },
+        "value": [
+          1774370510.006,
+          "345.039570622002"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "subresource": "openapi/v3",
+          "verb": "GET"
+        },
+        "value": [
+          1774370510.006,
+          "0.005573244"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "apiserver_request_duration_seconds_sum",
+          "instance": "10.89.0.12:6443",
+          "job": "kubernetes-apiserver",
+          "subresource": "openapi/v3/",
+          "verb": "GET"
+        },
+        "value": [
+          1774370510.006,
+          "0.007559909"
+        ]
+      }
+    ],
+    "pod_restarts": [
+      {
+        "metric": {
+          "__name__": "kube_pod_container_status_restarts_total",
+          "container": "backend",
+          "instance": "10.244.2.2:8080",
+          "job": "kube-state-metrics",
+          "namespace": "workload",
+          "pod": "backend-api-669d9964b8-b8qkw",
+          "uid": "1cd82933-059e-4f56-aa3d-55bd6a3ad11e"
+        },
+        "value": [
+          1774370510.01,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kube_pod_container_status_restarts_total",
+          "container": "backend",
+          "instance": "10.244.2.2:8080",
+          "job": "kube-state-metrics",
+          "namespace": "workload",
+          "pod": "backend-api-669d9964b8-qblwm",
+          "uid": "96bb72fc-8292-42dd-b768-b43ba154b324"
+        },
+        "value": [
+          1774370510.01,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kube_pod_container_status_restarts_total",
+          "container": "generator",
+          "instance": "10.244.2.2:8080",
+          "job": "kube-state-metrics",
+          "namespace": "workload",
+          "pod": "workload-generator-667dc97f4f-67vch",
+          "uid": "d7be5ca3-a676-44b8-b4e9-b4410260e59d"
+        },
+        "value": [
+          1774370510.01,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kube_pod_container_status_restarts_total",
+          "container": "nginx",
+          "instance": "10.244.2.2:8080",
+          "job": "kube-state-metrics",
+          "namespace": "workload",
+          "pod": "frontend-7868f8655b-25dwq",
+          "uid": "d75e4a2a-c909-4a08-ba3e-6e24c7fab408"
+        },
+        "value": [
+          1774370510.01,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kube_pod_container_status_restarts_total",
+          "container": "nginx",
+          "instance": "10.244.2.2:8080",
+          "job": "kube-state-metrics",
+          "namespace": "workload",
+          "pod": "frontend-7868f8655b-vqjvm",
+          "uid": "9dab8a8e-ecdd-4686-9ccc-a864fdf595eb"
+        },
+        "value": [
+          1774370510.01,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kube_pod_container_status_restarts_total",
+          "container": "redis",
+          "instance": "10.244.2.2:8080",
+          "job": "kube-state-metrics",
+          "namespace": "workload",
+          "pod": "redis-cache-67d574b944-ll9pf",
+          "uid": "5f9d78df-6ecd-4b5a-aaea-8f4235d507b5"
+        },
+        "value": [
+          1774370510.01,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kube_pod_container_status_restarts_total",
+          "container": "stress",
+          "instance": "10.244.2.2:8080",
+          "job": "kube-state-metrics",
+          "namespace": "workload",
+          "pod": "cpu-stressor-74d6ffcfc4-gghxs",
+          "uid": "9b2b7233-b86b-4136-a83b-66e83331bd56"
+        },
+        "value": [
+          1774370510.01,
+          "0"
+        ]
+      }
+    ]
+  },
+  "topology": {
+    "pods": [
+      {
+        "name": "backend-api-669d9964b8-b8qkw",
+        "namespace": "workload",
+        "node": "gnn-cluster-worker2",
+        "status": "Running",
+        "labels": {
+          "app": "backend",
+          "pod-template-hash": "669d9964b8"
+        }
+      },
+      {
+        "name": "backend-api-669d9964b8-qblwm",
+        "namespace": "workload",
+        "node": "gnn-cluster-worker3",
+        "status": "Running",
+        "labels": {
+          "app": "backend",
+          "pod-template-hash": "669d9964b8"
+        }
+      },
+      {
+        "name": "cpu-stressor-74d6ffcfc4-gghxs",
+        "namespace": "workload",
+        "node": "gnn-cluster-worker",
+        "status": "Pending",
+        "labels": {
+          "app": "cpu-stress",
+          "pod-template-hash": "74d6ffcfc4"
+        }
+      },
+      {
+        "name": "frontend-7868f8655b-25dwq",
+        "namespace": "workload",
+        "node": "gnn-cluster-worker",
+        "status": "Running",
+        "labels": {
+          "app": "frontend",
+          "pod-template-hash": "7868f8655b"
+        }
+      },
+      {
+        "name": "frontend-7868f8655b-vqjvm",
+        "namespace": "workload",
+        "node": "gnn-cluster-worker3",
+        "status": "Running",
+        "labels": {
+          "app": "frontend",
+          "pod-template-hash": "7868f8655b"
+        }
+      },
+      {
+        "name": "redis-cache-67d574b944-ll9pf",
+        "namespace": "workload",
+        "node": "gnn-cluster-worker2",
+        "status": "Running",
+        "labels": {
+          "app": "redis",
+          "pod-template-hash": "67d574b944"
+        }
+      },
+      {
+        "name": "workload-generator-667dc97f4f-67vch",
+        "namespace": "workload",
+        "node": "gnn-cluster-worker3",
+        "status": "Running",
+        "labels": {
+          "app": "workload-generator",
+          "pod-template-hash": "667dc97f4f"
+        }
+      }
+    ],
+    "nodes": [
+      {
+        "name": "gnn-cluster-control-plane",
+        "labels": {
+          "beta.kubernetes.io/arch": "arm64",
+          "beta.kubernetes.io/os": "linux",
+          "kubernetes.io/arch": "arm64",
+          "kubernetes.io/hostname": "gnn-cluster-control-plane",
+          "kubernetes.io/os": "linux",
+          "node-role.kubernetes.io/control-plane": "",
+          "node.kubernetes.io/exclude-from-external-load-balancers": ""
+        }
+      },
+      {
+        "name": "gnn-cluster-worker",
+        "labels": {
+          "beta.kubernetes.io/arch": "arm64",
+          "beta.kubernetes.io/os": "linux",
+          "kubernetes.io/arch": "arm64",
+          "kubernetes.io/hostname": "gnn-cluster-worker",
+          "kubernetes.io/os": "linux"
+        }
+      },
+      {
+        "name": "gnn-cluster-worker2",
+        "labels": {
+          "beta.kubernetes.io/arch": "arm64",
+          "beta.kubernetes.io/os": "linux",
+          "kubernetes.io/arch": "arm64",
+          "kubernetes.io/hostname": "gnn-cluster-worker2",
+          "kubernetes.io/os": "linux"
+        }
+      },
+      {
+        "name": "gnn-cluster-worker3",
+        "labels": {
+          "beta.kubernetes.io/arch": "arm64",
+          "beta.kubernetes.io/os": "linux",
+          "kubernetes.io/arch": "arm64",
+          "kubernetes.io/hostname": "gnn-cluster-worker3",
+          "kubernetes.io/os": "linux"
+        }
+      }
+    ]
+  },
+  "label": "pre_failure"
+}
