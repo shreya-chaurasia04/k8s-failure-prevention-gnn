@@ -4,7 +4,7 @@ A machine learning system that predicts failures in Kubernetes clusters by analy
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [System Architecture](#system-architecture)
@@ -19,7 +19,7 @@ A machine learning system that predicts failures in Kubernetes clusters by analy
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This project implements an end-to-end machine learning pipeline for predicting failures in Kubernetes clusters before they occur. By representing the cluster as a graph (pods and nodes as vertices, scheduling relationships as edges) and using Graph Neural Networks, the system can learn complex patterns that indicate impending failures.
 
@@ -40,7 +40,7 @@ This project implements an end-to-end machine learning pipeline for predicting f
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -202,7 +202,7 @@ graph LR
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone and Setup
 
@@ -281,7 +281,7 @@ python inference.py
 
 ---
 
-## 📦 Prerequisites
+## Prerequisites
 
 ### Software Requirements
 
@@ -352,7 +352,7 @@ kubectl get pods -n kube-system
 
 ---
 
-## 📊 Data Collection
+## Data Collection
 
 ### Current Status
 
@@ -403,7 +403,7 @@ python3 scripts/collect_normal_data_csv.py
 
 ---
 
-## 🤖 Model Training
+## Model Training
 
 ### Architecture
 
@@ -449,7 +449,7 @@ With balanced data:
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### Load Trained Model
 
@@ -500,7 +500,7 @@ while True:
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 ### Main Documentation
 
@@ -521,9 +521,9 @@ while True:
 
 ---
 
-## 📈 Project Status
+## Project Status
 
-### ✅ Completed
+### Completed
 
 - [x] Kubernetes cluster setup
 - [x] Prometheus monitoring deployment
@@ -534,10 +534,10 @@ while True:
 - [x] Inference system for predictions
 - [x] Comprehensive documentation
 
-### 🔄 In Progress
+### In Progress
 
-- [ ] Collect balanced normal data (1,500 snapshots needed)
-- [ ] Train model on balanced dataset
+- [x] Collect balanced normal data (1,500 snapshots needed)
+- [x] Train model on balanced dataset
 - [ ] Deploy for real-time monitoring
 
 ### 📋 TODO
@@ -550,7 +550,7 @@ while True:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please:
 
@@ -558,12 +558,6 @@ Contributions are welcome! Please:
 2. Create a feature branch
 3. Make your changes
 4. Submit a pull request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
