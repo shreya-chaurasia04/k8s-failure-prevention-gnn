@@ -546,7 +546,7 @@ Contributions are welcome! Please:
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - PyTorch Geometric team for the GNN framework
 - Kubernetes community for excellent documentation
@@ -554,7 +554,7 @@ Contributions are welcome! Please:
 
 ---
 
-## 📞 Support
+## Support
 
 For issues or questions:
 1. Check documentation in `docs/`
@@ -563,7 +563,7 @@ For issues or questions:
 
 ---
 
-## 🎯 Next Steps
+## Next Steps
 
 1. **Collect Balanced Data**
    ```bash
@@ -580,4 +580,3 @@ For issues or questions:
    python models/inference.py
    ```
 
-**Remember**: Model quality depends on data quality. Collect balanced, high-quality training data!
