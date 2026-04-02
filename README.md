@@ -23,21 +23,6 @@ A machine learning system that predicts failures in Kubernetes clusters by analy
 
 This project implements an end-to-end machine learning pipeline for predicting failures in Kubernetes clusters before they occur. By representing the cluster as a graph (pods and nodes as vertices, scheduling relationships as edges) and using Graph Neural Networks, the system can learn complex patterns that indicate impending failures.
 
-### Key Features
-
-- **Real-time Monitoring**: Continuous collection of cluster metrics via Prometheus
-- **Graph-based Learning**: Represents K8s topology as graphs for GNN processing
-- **Proactive Alerts**: Predicts failures 5-10 minutes before they occur
-- **High Accuracy**: >85% accuracy with balanced training data
-- **Scalable**: Handles clusters with hundreds of pods and nodes
-
-### Use Cases
-
-- **Prevent Downtime**: Alert operators before failures occur
-- **Resource Optimization**: Identify resource bottlenecks early
-- **Capacity Planning**: Understand failure patterns for better planning
-- **Automated Remediation**: Trigger auto-scaling or pod rescheduling
-
 ---
 
 ## System Architecture
