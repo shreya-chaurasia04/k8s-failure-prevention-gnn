@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: etcd-disk-stresser
+  namespace: chaos
+spec:
+  template:
+    spec:
+      nodeName: gnn-research-control-plane
+      containers:
+      - name: stressor
+        image: polinux/stress
+        # --hdd 4 --hdd-bytes 512M: This actually WRITES to the disk 
+        # instead of just calling sync(), which Etcd will definitely feel.
+        command: ["stress"]
+        args: ["--hdd", "4", "--hdd-bytes", "512M", "--timeout", "600s"]
+      restartPolicy: Never

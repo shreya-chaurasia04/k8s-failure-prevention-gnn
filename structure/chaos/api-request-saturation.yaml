@@ -1,0 +1,23 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: api-pressure
+  namespace: chaos
+spec:
+  parallelism: 3 # four pods attacking at once
+  template:
+    spec:
+      containers:
+      - name: attacker
+        image: alpine/k8s:1.27.3
+        command: ["/bin/sh", "-c"]
+        args:
+        - |
+          while true; do 
+            (kubectl get pods -A --all-namespaces &)
+            (kubectl get events -A &)
+            (kubectl get configmaps -A &)
+            (kubectl get secrets -A &)
+            sleep 0.2
+          done
+      restartPolicy: Never
