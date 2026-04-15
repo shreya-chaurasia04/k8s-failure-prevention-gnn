@@ -1,0 +1,39 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: cpu-stressor
+  namespace: chaos
+spec:
+  template:
+    spec:
+      # Use nodeSelector to target control-plane node (works with any cluster name)
+      nodeSelector:
+        node-role.kubernetes.io/control-plane: ""
+      containers:
+      - name: cpu-stress
+        image: polinux/stress
+        resources:
+          requests:
+            cpu: "500m"
+          limits:
+            cpu: "2000m"
+        # --cpu 4: Spawn 4 workers spinning on sqrt()
+        # This will stress the control-plane node where:
+        # - kube-apiserver runs
+        # - kube-scheduler runs
+        # - kube-controller-manager runs
+        # - etcd runs
+        # High CPU on control plane affects scheduling decisions and API responsiveness
+        command: ["stress"]
+        args: ["--cpu", "4", "--timeout", "600s", "--verbose"]
+      restartPolicy: Never
+      # Tolerate control-plane taints (required to schedule on control-plane)
+      tolerations:
+      - key: node-role.kubernetes.io/control-plane
+        operator: Exists
+        effect: NoSchedule
+      - key: node-role.kubernetes.io/master
+        operator: Exists
+        effect: NoSchedule
+
+# Made with Bob

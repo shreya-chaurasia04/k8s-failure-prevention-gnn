@@ -73,8 +73,8 @@ class ClusterGraphArchitect:
                 if pod_cat:
                     node_id = self.name_to_id[pod_cat]
                     val_vec = torch.tensor([
-                        row['api_rate'], row['etcd_fsync'], 
-                        row['pod_cpu'], row['api_latency']
+                        row.get('api_rate', 0), row.get('etcd_fsync', 0),
+                        row.get('pod_cpu', 0), row.get('api_latency', 0)
                     ], dtype=torch.float)
                     
                     # Use max to aggregate metrics if multiple pods map to one category

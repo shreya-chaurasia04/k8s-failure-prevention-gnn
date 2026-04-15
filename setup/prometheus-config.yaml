@@ -27,7 +27,7 @@ data:
       - job_name: 'kubernetes-scheduler'
         honor_labels: true
         static_configs:
-          - targets: ['172.18.0.4:10259']
+          - targets: ['10.89.0.5:10259']
         scheme: https
         tls_config:
           insecure_skip_verify: true
@@ -36,7 +36,7 @@ data:
       - job_name: 'kubernetes-controller-manager'
         honor_labels: true
         static_configs:
-          - targets: ['172.18.0.4:10257']
+          - targets: ['10.89.0.5:10257']
         scheme: https
         tls_config:
           insecure_skip_verify: true
@@ -45,7 +45,7 @@ data:
       - job_name: 'etcd'
         honor_labels: true
         static_configs:
-          - targets: ['172.18.0.4:2381']
+          - targets: ['10.89.0.5:2381']
         scheme: http
 
       - job_name: 'kubernetes-cadvisor'
@@ -64,3 +64,17 @@ data:
             regex: (.+)
             target_label: __metrics_path__
             replacement: /api/v1/nodes/${1}/proxy/metrics/cadvisor
+
+      - job_name: 'node-exporter'
+        honor_labels: true
+        kubernetes_sd_configs:
+          - role: endpoints
+            namespaces:
+              names:
+                - monitoring
+        relabel_configs:
+          - source_labels: [__meta_kubernetes_service_name]
+            action: keep
+            regex: node-exporter
+          - source_labels: [__meta_kubernetes_endpoint_node_name]
+            target_label: node

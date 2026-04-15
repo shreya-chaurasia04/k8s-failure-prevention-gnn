@@ -18,11 +18,11 @@ def prepare_dataset():
     all_graphs = []
     
     # Process Baseline (Label 0)
-    for f in glob.glob("/root/K8-Project/structure/data/baseline/*.csv"):
+    for f in glob.glob("data/baseline/*.csv"):
         all_graphs.extend(arch.create_graph(f))
     
-    # Process Failure (Label 1)
-    for f in glob.glob("/root/K8-Project/structure/data/failure/*.csv"):
+    # Process Failure (Label 1, 2, 3, 4)
+    for f in glob.glob("data/failure/*.csv"):
         all_graphs.extend(arch.create_graph(f))
         
     torch.manual_seed(42)
@@ -38,7 +38,8 @@ train_loader = DataLoader(train_data, batch_size=32, shuffle=True)
 test_loader = DataLoader(test_data, batch_size=32, shuffle=False)
 
 # 3. Model setup
-model = GNNStack(input_dim=4, hidden_dim=32, output_dim=3, num_layers=3).to(device)
+# Updated: input_dim=4 (original features), output_dim=5 (5 failure classes)
+model = GNNStack(input_dim=4, hidden_dim=32, output_dim=5, num_layers=3).to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=5e-4)
 criterion = nn.CrossEntropyLoss()
 
@@ -70,7 +71,7 @@ def evaluate_model(loader, title="Final Validation"):
     all_preds = []
     all_labels = []
 
-    target_names = ['Healthy', 'Etcd-Fail', 'API-Fail']
+    target_names = ['Healthy', 'Etcd-Fail', 'API-Fail', 'CPU-Stress', 'Memory-Stress']
     
     with torch.no_grad():
         for data in loader:
@@ -108,5 +109,5 @@ for epoch in range(1, 151):
 
 # 6. Evaluation and Save
 evaluate_model(test_loader)
-torch.save(model.state_dict(), "/root/K8-Project/structure/models/gnn_failure_model.pt")
+torch.save(model.state_dict(), "models/gnn_failure_model.pt")
 print("✅ Model brain saved as gnn_failure_model.pt")

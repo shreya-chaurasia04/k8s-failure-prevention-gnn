@@ -1,0 +1,44 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: memory-stressor
+  namespace: chaos
+spec:
+  template:
+    spec:
+      # Use nodeSelector to target control-plane node (works with any cluster name)
+      nodeSelector:
+        node-role.kubernetes.io/control-plane: ""
+      containers:
+      - name: memory-stress
+        image: polinux/stress
+        resources:
+          requests:
+            memory: "256Mi"
+          limits:
+            memory: "1Gi"
+        # --vm 2: Spawn 2 workers spinning on malloc()/free()
+        # --vm-bytes 512M: Each worker allocates 512MB (1GB total)
+        # --vm-hang 0: Continuously allocate/free (no sleep)
+        # This will stress the control-plane node memory where:
+        # - kube-apiserver runs (memory-intensive for large clusters)
+        # - etcd runs (keeps cluster state in memory)
+        # - kube-scheduler runs (maintains scheduling queue)
+        # - kube-controller-manager runs (watches all resources)
+        # Memory pressure on control plane can cause:
+        # - API server OOM
+        # - etcd performance degradation
+        # - Scheduler delays
+        command: ["stress"]
+        args: ["--vm", "2", "--vm-bytes", "512M", "--vm-hang", "0", "--timeout", "600s", "--verbose"]
+      restartPolicy: Never
+      # Tolerate control-plane taints (required to schedule on control-plane)
+      tolerations:
+      - key: node-role.kubernetes.io/control-plane
+        operator: Exists
+        effect: NoSchedule
+      - key: node-role.kubernetes.io/master
+        operator: Exists
+        effect: NoSchedule
+
+# Made with Bob
